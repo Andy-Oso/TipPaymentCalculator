@@ -1,4 +1,4 @@
-package Calculator;
+package project3;
 
 /**
  * The Order class definition. To be used in the TipCalculator JavaFX application
@@ -14,16 +14,17 @@ public class Order {
     private double price;
     
     /**
-     * 
+     * The Default constructor for Order objects. Items are instantiated to an empty
+     * string and prices are instantiated to "0.0"
      */
     public Order(){
         this("", 0);
     }
     
     /**
-     * 
-     * @param item
-     * @param price 
+     * The constructor for an Order object, for use in the TipCalculator class
+     * @param item The item name of the order as a String
+     * @param price the price of the order as a double
      */
     public Order(String item, double price){
         this.setItem(item);
@@ -31,7 +32,7 @@ public class Order {
     }
     
     /**
-     * 
+     * Returns the name of the object 
      * @return 
      */
     public String getItem(){
